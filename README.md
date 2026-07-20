@@ -1,34 +1,63 @@
 # 🛒 Olist E-Commerce Business Intelligence & Predictive Analytics
 
-An end-to-end Data Analytics and Machine Learning project built using the **Olist Brazilian E-Commerce Public Dataset**. This project demonstrates the complete analytics lifecycle—from raw data exploration and cleaning to business intelligence reporting, feature engineering, and predictive modeling.
+### End-to-End Data Analytics, Business Intelligence & Machine Learning Project
+
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas)
+![NumPy](https://img.shields.io/badge/NumPy-Scientific%20Computing-013243?logo=numpy)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-F7931E?logo=scikitlearn)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-blue)
+![Git](https://img.shields.io/badge/Git-Version%20Control-F05032?logo=git)
+![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?logo=github)
+![Status](https://img.shields.io/badge/Project-Completed-success)
 
 ---
 
 ## 📖 Project Overview
 
-The Olist marketplace connects customers with sellers across Brazil. This project analyzes transactional, customer, seller, payment, review, and product data to uncover business insights and build a machine learning model for predicting delivery time.
+This project presents an end-to-end Business Intelligence and Predictive Analytics solution using the **Olist Brazilian E-Commerce Public Dataset**.
 
-The project follows an industry-standard analytics workflow suitable for data analyst and data science portfolios.
+The objective is to transform raw relational e-commerce data into actionable business insights through professional data analysis, visualization, feature engineering, and machine learning.
 
----
-
-## 🎯 Objectives
-
-- Understand and assess the quality of raw datasets.
-- Clean and preprocess multi-table relational data.
-- Perform Exploratory Data Analysis (EDA).
-- Generate business insights using KPI-based reporting.
-- Engineer meaningful features for predictive modeling.
-- Train and evaluate a machine learning model to predict delivery time.
-- Present actionable recommendations for business decision-making.
+The project follows an industry-standard Data Analytics workflow commonly used by Data Analysts, Business Intelligence Analysts, and Data Scientists.
 
 ---
 
-## 📂 Dataset
+# ⭐ Project Highlights
 
-**Dataset:** Olist Brazilian E-Commerce Public Dataset
+- End-to-End Data Analytics Pipeline
+- Multi-table Relational Database Analysis
+- Professional Data Cleaning & Preprocessing
+- Exploratory Data Analysis (EDA)
+- Business Intelligence Reporting
+- Feature Engineering
+- Machine Learning Pipeline
+- Modular Python Project Architecture
+- Unit Testing with Pytest
+- Git & GitHub Version Control
 
-The dataset contains information on:
+---
+
+# 🎯 Objectives
+
+- Understand the structure of relational datasets
+- Assess overall data quality
+- Handle missing values and inconsistent data
+- Perform exploratory data analysis
+- Generate business insights using KPIs
+- Engineer predictive features
+- Train and evaluate a Machine Learning model
+- Deliver business recommendations based on analytical findings
+
+---
+
+# 📂 Dataset
+
+**Dataset Name**
+
+Olist Brazilian E-Commerce Public Dataset
+
+The dataset contains information about:
 
 - Customers
 - Orders
@@ -40,24 +69,29 @@ The dataset contains information on:
 - Geolocation
 - Product Category Translation
 
-Key characteristics:
+### Dataset Statistics
 
-- ~100,000 orders
-- ~99,000 customers
-- ~112,000 order items
-- Multiple related tables linked using primary and foreign keys
+| Metric | Value |
+|---------|------:|
+| Orders | ~100,000 |
+| Customers | ~99,000 |
+| Order Items | ~112,000 |
+| Sellers | ~3,000 |
+| Products | ~33,000 |
+| Reviews | ~99,000 |
 
 ---
 
-## 🛠️ Technologies Used
+# 🛠️ Technology Stack
 
-| Category | Tools |
-|----------|-------|
-| Programming Language | Python |
+| Category | Technologies |
+|----------|--------------|
+| Programming | Python |
 | Data Analysis | Pandas, NumPy |
-| Visualization | Matplotlib |
+| Visualization | Matplotlib, Plotly |
 | Machine Learning | Scikit-learn |
-| Development Environment | Jupyter Notebook, VS Code |
+| Development | Jupyter Notebook, VS Code |
+| Testing | Pytest |
 | Version Control | Git & GitHub |
 
 ---
@@ -68,11 +102,16 @@ Key characteristics:
 olist-ecommerce-business-intelligence/
 │
 ├── assets/
+│
 ├── config/
+│
 ├── data/
 │   ├── raw/
+│   ├── interim/
 │   └── processed/
+│
 ├── docs/
+│
 ├── notebooks/
 │   ├── 01_data_understanding.ipynb
 │   ├── 02_data_quality_assessment.ipynb
@@ -80,11 +119,22 @@ olist-ecommerce-business-intelligence/
 │   ├── 04_exploratory_data_analysis.ipynb
 │   ├── 05_business_insights.ipynb
 │   └── 06_feature_engineering.ipynb
+│
 ├── reports/
+│
 ├── src/
+│   ├── data/
+│   ├── dashboard/
+│   ├── models/
+│   ├── utils/
+│   ├── visualization/
+│   ├── config.py
+│   └── logger.py
+│
 ├── tests/
-├── README.md
+│
 ├── requirements.txt
+├── README.md
 └── .gitignore
 ```
 
@@ -92,106 +142,121 @@ olist-ecommerce-business-intelligence/
 
 # 🔄 Project Workflow
 
-```
-Raw Data
-      │
-      ▼
-Data Understanding
-      │
-      ▼
-Data Quality Assessment
-      │
-      ▼
-Data Cleaning
-      │
-      ▼
-Exploratory Data Analysis
-      │
-      ▼
-Business Intelligence
-      │
-      ▼
-Feature Engineering
-      │
-      ▼
-Machine Learning
-      │
-      ▼
-Business Recommendations
+```text
+                  Raw Data
+                      │
+                      ▼
+          Data Understanding
+                      │
+                      ▼
+      Data Quality Assessment
+                      │
+                      ▼
+            Data Cleaning
+                      │
+                      ▼
+     Exploratory Data Analysis
+                      │
+                      ▼
+       Business Intelligence
+                      │
+                      ▼
+       Feature Engineering
+                      │
+                      ▼
+        Machine Learning
+                      │
+                      ▼
+    Business Recommendations
 ```
 
 ---
 
-# 📊 Key Analyses Performed
+# 📊 Project Modules
 
-### Data Understanding
+## 1️⃣ Data Understanding
+
 - Dataset inspection
 - Schema exploration
 - Relationship identification
-- Primary and foreign key validation
+- Primary Key validation
+- Foreign Key validation
 
-### Data Quality Assessment
-- Missing value analysis
-- Duplicate detection
-- Data integrity checks
-- Consistency validation
+---
 
-### Data Cleaning
-- Missing value handling
+## 2️⃣ Data Quality Assessment
+
+- Missing Value Analysis
+- Duplicate Detection
+- Data Integrity Checks
+- Consistency Validation
+
+---
+
+## 3️⃣ Data Cleaning
+
+- Missing value treatment
 - Datetime conversion
-- Dataset preprocessing
+- Data preprocessing
 - Clean dataset generation
 
-### Exploratory Data Analysis
-- Order trends
-- Revenue analysis
-- Payment analysis
-- Customer behavior
-- Seller performance
-- Product category analysis
-- Delivery performance
-- Review analysis
+---
 
-### Business Intelligence
-- Executive KPIs
-- Revenue by state
-- Revenue by product category
-- Seller performance
-- Customer satisfaction
-- Logistics performance
-- Strategic recommendations
+## 4️⃣ Exploratory Data Analysis
 
-### Machine Learning
-- Feature engineering
-- Delivery time prediction
-- Random Forest Regression
-- Model evaluation
-- Feature importance analysis
+Analysis performed:
+
+- Monthly Order Trend
+- Revenue Analysis
+- Payment Analysis
+- Customer Distribution
+- Seller Performance
+- Product Category Analysis
+- Review Analysis
+- Delivery Performance
 
 ---
 
-# 📈 Key Business Insights
+## 5️⃣ Business Intelligence
 
-- The marketplace generates significant revenue through a limited number of product categories.
-- Credit cards are the dominant payment method.
-- Customer demand is concentrated in a few Brazilian states.
-- Delivery performance strongly influences customer satisfaction.
-- Seller performance varies considerably across the marketplace.
-- Seasonal purchasing patterns affect monthly revenue.
+Executive KPIs
+
+- Revenue Analysis
+- Orders Analysis
+- Customer Insights
+- Seller Performance
+- Product Performance
+- Logistics Analysis
+- Customer Satisfaction
 
 ---
 
-# 🤖 Machine Learning Model
+## 6️⃣ Feature Engineering
 
-**Model Used**
+Created Features
 
-- Random Forest Regressor
+- Delivery Days
+- Approval Hours
+- Purchase Month
+- Purchase Day
+- Purchase Weekday
+- Purchase Hour
+- Weekend Indicator
+- Late Delivery Flag
 
-**Prediction Target**
+---
 
-- Delivery Time (Days)
+## 7️⃣ Machine Learning
 
-**Engineered Features**
+### Model Used
+
+Random Forest Regressor
+
+### Prediction Target
+
+Delivery Time (Days)
+
+### Feature Set
 
 - Payment Value
 - Payment Installments
@@ -199,11 +264,11 @@ Business Recommendations
 - Purchase Day
 - Purchase Weekday
 - Purchase Hour
-- Approval Time
+- Approval Hours
 
 ---
 
-# 📊 Model Evaluation
+# 📈 Model Evaluation
 
 The model was evaluated using:
 
@@ -211,51 +276,96 @@ The model was evaluated using:
 - Root Mean Squared Error (RMSE)
 - R² Score
 
-Feature importance analysis was performed to identify the variables contributing most to delivery time prediction.
+Feature Importance analysis was also performed to understand which variables contribute most to delivery time prediction.
 
 ---
 
-# 💡 Business Recommendations
+# 💡 Key Business Insights
 
-- Improve logistics efficiency to reduce delivery times.
-- Increase inventory for high-demand product categories.
-- Focus marketing efforts on high-revenue regions.
+- Credit Card is the dominant payment method.
+- Revenue is concentrated in a limited number of product categories.
+- Customer demand is highly concentrated in major Brazilian states.
+- Delivery performance directly impacts customer satisfaction.
+- Seasonal purchasing trends influence monthly revenue.
+- Seller performance varies significantly across the marketplace.
+
+---
+
+# 📌 Business Recommendations
+
+- Improve logistics efficiency to reduce delivery delays.
+- Optimize inventory for high-demand product categories.
 - Strengthen partnerships with top-performing sellers.
-- Enhance customer satisfaction through faster order fulfillment.
+- Expand marketing campaigns in high-revenue regions.
+- Improve customer experience through faster delivery.
+
+---
+
+# 🧪 Testing
+
+The project includes automated unit testing using **Pytest**.
+
+Implemented Tests
+
+- Data Loader
+- Data Preprocessing
+- Dataset Merge Functions
+- Machine Learning Pipeline
+
+**Current Status**
+
+```
+==============================
+4 Tests Passed
+==============================
+```
 
 ---
 
 # 🚀 Future Improvements
 
-- Hyperparameter tuning
-- XGBoost and LightGBM comparison
-- Interactive Power BI dashboard
-- Streamlit web application
-- Real-time prediction API using FastAPI
+- Hyperparameter Tuning
+- XGBoost
+- LightGBM
+- Streamlit Interactive Dashboard
+- Power BI Dashboard
+- FastAPI Prediction API
+- Docker Deployment
+- CI/CD using GitHub Actions
 
 ---
 
-# ▶️ How to Run
+# ▶️ Installation
 
-### Clone the Repository
+Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/olist-ecommerce-business-intelligence.git
+git clone https://github.com/devil-hat00/olist-ecommerce-business-intelligence.git
 ```
 
-### Install Dependencies
+Move into the project folder
+
+```bash
+cd olist-ecommerce-business-intelligence
+```
+
+Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Launch Jupyter Notebook
+Launch Jupyter Notebook
 
 ```bash
 jupyter notebook
 ```
 
-Run the notebooks sequentially from **01** to **06**.
+Run notebooks sequentially
+
+```
+01 → 02 → 03 → 04 → 05 → 06
+```
 
 ---
 
@@ -263,6 +373,7 @@ Run the notebooks sequentially from **01** to **06**.
 
 - Data Cleaning
 - Data Wrangling
+- Relational Data Analysis
 - Exploratory Data Analysis
 - Business Intelligence
 - Data Visualization
@@ -270,20 +381,40 @@ Run the notebooks sequentially from **01** to **06**.
 - Machine Learning
 - Predictive Analytics
 - Python Programming
-- Git Version Control
+- Software Engineering
+- Git & GitHub
+- Unit Testing
 
 ---
 
-# 👨‍💻 Author
+# 📈 Repository Statistics
 
-**Your Name**
-
-AI & Data Science Undergraduate
-
-GitHub: https://github.com/yourusername
-
-LinkedIn: https://linkedin.com/in/yourprofile
+- 9 Relational Datasets
+- 100,000+ Orders
+- 6 Analysis Notebooks
+- Modular Python Package
+- Machine Learning Pipeline
+- Automated Testing
+- Professional Project Structure
 
 ---
 
-## ⭐ If you found this project useful, consider giving it a star!
+# 📬 Contact
+
+## Tarun Sharma
+
+**AI & Data Science Undergraduate**
+
+### GitHub
+
+https://github.com/devil-hat00
+
+### LinkedIn
+
+https://www.linkedin.com/in/tarun-sharma-45340a324/
+
+---
+
+## ⭐ If you found this project useful, please consider giving it a Star!
+
+It helps support the project and encourages future development.
