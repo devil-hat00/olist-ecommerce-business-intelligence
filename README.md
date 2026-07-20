@@ -1,5 +1,11 @@
 # 🛒 Olist E-Commerce Business Intelligence & Predictive Analytics
 
+## 🌐 Live Demo
+
+**Try the application here:**
+
+https://olist-ecommerce-business-intelligence-5zwkhb8vzsapplm2gf3nv2p.streamlit.app/
+
 ### End-to-End Data Analytics, Business Intelligence & Machine Learning Project
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
